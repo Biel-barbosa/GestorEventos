@@ -37,7 +37,7 @@ const Index = () => {
                 <div className="relative">
                   <AspectRatio ratio={16/12} className="bg-muted rounded-md overflow-hidden">
                     <img
-                      src="/calendar.png"
+                      src="/calendar-image-jpg.jpg"
                       alt="Ilustração de calendário"
                       className="w-full h-full object-cover"
                       onError={(e) => {

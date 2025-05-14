@@ -139,9 +139,9 @@ const EventForm: React.FC<EventFormProps> = ({
           name="title"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Titulo do Evento</FormLabel>
+              <FormLabel>Event Title</FormLabel>
               <FormControl>
-                <Input placeholder="Adicione o titulo" {...field} />
+                <Input placeholder="Add title" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -154,10 +154,10 @@ const EventForm: React.FC<EventFormProps> = ({
           name="description"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Descrição</FormLabel>
+              <FormLabel>Description</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Adicione a descrição"
+                  placeholder="Add description"
                   className="resize-none"
                   {...field}
                   value={field.value || ""}
@@ -174,9 +174,9 @@ const EventForm: React.FC<EventFormProps> = ({
           name="location"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Local</FormLabel>
+              <FormLabel>Location</FormLabel>
               <FormControl>
-                <Input placeholder="adicione o local" {...field} value={field.value || ""} />
+                <Input placeholder="Add location" {...field} value={field.value || ""} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -190,7 +190,7 @@ const EventForm: React.FC<EventFormProps> = ({
           render={({ field }) => (
             <FormItem className="flex flex-row items-center justify-between rounded-lg border p-3 shadow-sm">
               <div className="space-y-0.5">
-                <FormLabel>Dia todo</FormLabel>
+                <FormLabel>All Day Event</FormLabel>
               </div>
               <FormControl>
                 <Switch
@@ -209,7 +209,7 @@ const EventForm: React.FC<EventFormProps> = ({
             name="start"
             render={({ field }) => (
               <FormItem className="flex-1">
-                <FormLabel>Começo do evento</FormLabel>
+                <FormLabel>Start Date</FormLabel>
                 <Popover>
                   <PopoverTrigger asChild>
                     <FormControl>
@@ -222,7 +222,7 @@ const EventForm: React.FC<EventFormProps> = ({
                         {field.value ? (
                           format(field.value, "PPP")
                         ) : (
-                          <span>Escolha a data</span>
+                          <span>Pick a date</span>
                         )}
                         <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
                       </Button>
@@ -244,7 +244,7 @@ const EventForm: React.FC<EventFormProps> = ({
 
           {!form.watch("allDay") && (
             <FormItem className="flex-1">
-              <FormLabel>Horário inicio</FormLabel>
+              <FormLabel>Start Time</FormLabel>
               <div className="flex items-center">
                 <Controller
                   control={form.control}
@@ -276,7 +276,7 @@ const EventForm: React.FC<EventFormProps> = ({
             name="end"
             render={({ field }) => (
               <FormItem className="flex-1">
-                <FormLabel>Final do evento</FormLabel>
+                <FormLabel>End Date</FormLabel>
                 <Popover>
                   <PopoverTrigger asChild>
                     <FormControl>
@@ -289,7 +289,7 @@ const EventForm: React.FC<EventFormProps> = ({
                         {field.value ? (
                           format(field.value, "PPP")
                         ) : (
-                          <span>Escolha uma data</span>
+                          <span>Pick a date</span>
                         )}
                         <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
                       </Button>
@@ -352,7 +352,7 @@ const EventForm: React.FC<EventFormProps> = ({
 
           {!form.watch("allDay") && (
             <FormItem className="flex-1">
-              <FormLabel>Horário final</FormLabel>
+              <FormLabel>End Time</FormLabel>
               <div className="flex items-center">
                 <Controller
                   control={form.control}
@@ -403,7 +403,7 @@ const EventForm: React.FC<EventFormProps> = ({
           name="category"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Categoria</FormLabel>
+              <FormLabel>Category</FormLabel>
               <Select
                 onValueChange={field.onChange}
                 defaultValue={field.value}
@@ -436,10 +436,10 @@ const EventForm: React.FC<EventFormProps> = ({
         {/* Actions */}
         <div className="flex justify-end gap-3 pt-4">
           <Button type="button" variant="outline" onClick={onCancel}>
-            Cancelar
+            Cancel
           </Button>
           <Button type="submit" disabled={isSubmitting}>
-            {isSubmitting ? "Salvando..." : initialData ? "Evento atualizado" : "Criar evento"}
+            {isSubmitting ? "Saving..." : initialData ? "Update Event" : "Create Event"}
           </Button>
         </div>
       </form>

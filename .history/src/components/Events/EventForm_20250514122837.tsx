@@ -352,7 +352,7 @@ const EventForm: React.FC<EventFormProps> = ({
 
           {!form.watch("allDay") && (
             <FormItem className="flex-1">
-              <FormLabel>Horário final</FormLabel>
+              <FormLabel>End Time</FormLabel>
               <div className="flex items-center">
                 <Controller
                   control={form.control}
@@ -436,10 +436,10 @@ const EventForm: React.FC<EventFormProps> = ({
         {/* Actions */}
         <div className="flex justify-end gap-3 pt-4">
           <Button type="button" variant="outline" onClick={onCancel}>
-            Cancelar
+            Cancel
           </Button>
           <Button type="submit" disabled={isSubmitting}>
-            {isSubmitting ? "Salvando..." : initialData ? "Evento atualizado" : "Criar evento"}
+            {isSubmitting ? "Saving..." : initialData ? "Update Event" : "Create Event"}
           </Button>
         </div>
       </form>

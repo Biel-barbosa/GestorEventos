@@ -31,15 +31,16 @@ const EventCard: React.FC<EventCardProps> = ({ event, onClick }) => {
         return `All day · ${format(startDate, 'MMM d, yyyy')}`;
       }
       
-   
+      // Same day event
       if (startDate.toDateString() === endDate.toDateString()) {
         return `${format(startDate, 'MMM d, yyyy')} · ${format(startDate, 'h:mm a')} - ${format(endDate, 'h:mm a')}`;
       }
       
+      // Multi-day event
       return `${format(startDate, 'MMM d')} - ${format(endDate, 'MMM d, yyyy')}`;
     } catch (error) {
-      console.error("Erro ao formatar a hora do evento:", error);
-      return "Data erro";
+      console.error("Error formatting event time:", error);
+      return "Date error";
     }
   };
 

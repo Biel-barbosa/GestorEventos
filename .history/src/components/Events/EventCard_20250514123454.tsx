@@ -39,7 +39,7 @@ const EventCard: React.FC<EventCardProps> = ({ event, onClick }) => {
       return `${format(startDate, 'MMM d')} - ${format(endDate, 'MMM d, yyyy')}`;
     } catch (error) {
       console.error("Erro ao formatar a hora do evento:", error);
-      return "Data erro";
+      return "Date error";
     }
   };
 
