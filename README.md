@@ -1,73 +1,34 @@
-# Welcome to your Lovable project
+# 🎉 Sistema de Gerenciamento de Eventos
 
-## Project info
+Um sistema completo para criação, organização e visualização de eventos! Desenvolvido com **Angular 15+**, este projeto permite gerenciar eventos com funcionalidades modernas como calendário interativo, filtros avançados, autenticação e muito mais.
 
-**URL**: https://lovable.dev/projects/19a39315-b17b-4ab3-9176-602a67e387d6
+---
 
-## How can I edit this code?
+## 🚀 Funcionalidades
 
-There are several ways of editing your application.
+- ✅ **Autenticação de usuários** (login e cadastro com Firebase Authentication ou JWT)
+- 📅 **CRUD de eventos** (criar, listar, editar e excluir eventos)
+- 🔍 **Filtros por data, categoria e local**
+- 🗓️ **Visualização em lista e calendário** (FullCalendar Angular)
+- 🔔 **Notificações internas para eventos próximos**
+- 👤 **Área de perfil do usuário** com histórico de eventos criados e participados
+- 📋 **Formulários reativos com validações**
+- 📱 **Design responsivo** para desktop e mobile
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/19a39315-b17b-4ab3-9176-602a67e387d6) and start prompting.
+## 🛠️ Tecnologias Utilizadas
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Angular 15+**
+- **TypeScript**
+- **Angular Router**
+- **Reactive Forms**
+- **RxJS** – gerenciamento de estado e eventos assíncronos
+- **FullCalendar Angular** – visualização de calendário
+- **SCSS** – estilização customizada
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📦 Confira o projeto na Vercel 
+https://gestor-eventos-kappa.vercel.app/
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/19a39315-b17b-4ab3-9176-602a67e387d6) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
